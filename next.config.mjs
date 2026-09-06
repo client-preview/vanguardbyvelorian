@@ -1,14 +1,11 @@
-const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
-const basePath = isGitHubPages ? "/vanguardbyvelorian" : "";
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
   trailingSlash: true,
-  basePath,
-  assetPrefix: basePath || undefined,
+  basePath: "/vanguardbyvelorian",
+  assetPrefix: "/vanguardbyvelorian/",
   env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
+    NEXT_PUBLIC_BASE_PATH: "/vanguardbyvelorian",
   },
   images: {
     unoptimized: true,

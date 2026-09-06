@@ -1,0 +1,3 @@
+Upload next.config.mjs to the ROOT of the GitHub repository.
+Choose Replace when GitHub asks about the existing file, then commit the change.
+The GitHub Pages workflow will run again automatically.
